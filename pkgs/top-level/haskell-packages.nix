@@ -1039,6 +1039,8 @@ self : let callPackage = x : y : modifyPrio (newScope self x y); in
 
   Graphalyze = callPackage ../development/libraries/haskell/Graphalyze {};
 
+  graphicsFormats = callPackage ../development/libraries/haskell/graphicsFormats {};
+
   graphmod = callPackage ../development/tools/haskell/graphmod {};
 
   graphviz = callPackage ../development/libraries/haskell/graphviz { systemGraphviz = pkgs.graphviz; };
