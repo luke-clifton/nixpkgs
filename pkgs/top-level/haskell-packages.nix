@@ -1414,6 +1414,8 @@ self : let callPackage = x : y : modifyPrio (newScope self x y); in
 
   indexedFree = callPackage ../development/libraries/haskell/indexed-free {};
 
+  InfixApplicative = callPackage ../development/libraries/haskell/InfixApplicative {};
+
   instantGenerics = callPackage ../development/libraries/haskell/instant-generics {};
 
   interlude = callPackage ../development/libraries/haskell/interlude {};
